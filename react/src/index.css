@@ -1,18 +1,5 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -28,8 +15,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
 }
 
 h1 {
@@ -56,15 +42,127 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.container {
+  width:100%;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.header-content {
+  height: 64px;
+  background: #17092C;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.title-1,
+.title-2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.title-1{
+  color: #FFFFFF;
+}
+
+.title-2 {
+  color: #52B45B;
+}
+
+.login-content {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  margin: 0 auto;
+  height: 548px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  max-width: 416px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 352px;
+  padding: 40px 32px;
+}
+
+.login-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.email,
+.senha {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.email-title,
+.senha-title{
+  display: flex;
+}
+.email-input,
+.senha-input {
+  width: 100%;
+  max-width: 318px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #87848F;
+  border-radius: 5px;
+  padding: 12px 16px;
+}
+
+.mantenha-conectado {
+  display: flex;
+  align-items: center
+}
+.checkbox-input {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+.checkbox-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.enter {
+  width: 100%;
+}
+
+.enter-button {
+  background: #2E046D;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  color: #FFFFFF;
+}
+
+.cadastro {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E046D;
 }
